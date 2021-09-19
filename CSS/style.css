@@ -1,0 +1,123 @@
+body
+{
+	background-color: #f4f4f4f;
+	color: #555;
+	font-family: Arial, sans-serif, serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+.container
+{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;	/*so there is no scroll bars if something goes out of container*/
+}
+
+#main-header
+{
+	background-color: cornflowerblue;
+	color: white;
+}
+
+
+#navbar
+{
+	background-color: lemonchiffon;
+	color: black;
+}
+
+#navbar ul
+{
+	list-style: none;
+	padding: 0;
+}
+
+#navbar li
+{
+	display: inline;
+}
+
+#navbar a
+{
+	text-decoration: none;
+	font-size: 18px;
+	padding: 12px;
+}
+
+#navbar a:hover
+{
+	color: red;
+}
+
+#navbar a:active
+{
+	color: green;
+}
+
+#showcase
+{
+	background-image: url('../images/showcase.jpg');
+	background-position: center right;
+	min-height: 100px;		/*it will vary the height of the image as per the size of the page making it more responsive*/
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#showcase h1
+{
+	color: black;
+	font-size: 20px;
+	line-height: 1.6em;
+	padding-top: 20px;
+}
+
+#mainbody
+{
+	float: left;
+	width: 70%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+#sidebar
+{
+	float: right;
+	width: 30%;
+	background-color: darkslategrey;
+	color: white;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+.footer
+{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+	
+#main-footer
+{
+	background-color: darkgray;
+	color: black;
+	text-align: center;
+	padding: 0 50px 0 50px;
+	margin-top: 100px;
+}
+
+/*to make the website full responsive we add media query*/
+@media(max-width:600px)
+{
+	#mainbody
+	{
+		width: 100%;
+		float: none;
+	}
+	#sidebar
+	{
+		width: 100%;
+		float: none;
+	}
+}
